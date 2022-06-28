@@ -8,10 +8,10 @@ jobs:
     - uses: actions/checkout@master
     - name: Build Dockerfile.base
       run: docker build . --file Dockerfile.base --tag jakejarvis/chrome-headless:latest
-    - name: Run audit on https://github.com/
+    - name: Run audit on https://ikea.cn/cn/zh/
       uses: ./
       with:
-        url: 'https://github.com/'
+        url: 'https://ikea.cn/cn/zh/'
     - uses: actions/upload-artifact@master
       with:
         name: report
