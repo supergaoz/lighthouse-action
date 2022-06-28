@@ -11,7 +11,7 @@ jobs:
     - name: Run audit on https://ikea.cn/cn/zh/
       uses: ./
       with:
-        url: 'https://ikea.cn/cn/zh/'
+        url: 'https://www.ikea.cn/cn/zh/'
     - uses: actions/upload-artifact@master
       with:
         name: report
